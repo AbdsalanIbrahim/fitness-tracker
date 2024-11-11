@@ -5,22 +5,20 @@ import './ExerciseList.css';
 function ExerciseList() {
   const [exercises, setExercises] = useState([]);
 
-  // Fetching exercise data from the API
   useEffect(() => {
     fetch('http://localhost:4000/exercises')
       .then((response) => {
-        // Check if the response is ok (status code 200)
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json();
       })
       .then((data) => {
-        console.log('Fetched exercises:', data);  // Debug log to check if data is fetched successfully
+        console.log('Fetched exercises:', data);  
         setExercises(data);
       })
       .catch((error) => {
-        console.error('Error fetching exercises:', error);  // Catch any errors in the fetch call
+        console.error('Error fetching exercises:', error);  
       });
   }, []);
 

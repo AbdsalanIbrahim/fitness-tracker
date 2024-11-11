@@ -5,7 +5,7 @@ function AddExerciseForm() {
   const [exerciseName, setExerciseName] = useState('');
   const [duration, setDuration] = useState('');
   const [caloriesBurned, setCaloriesBurned] = useState('');
-  const navigate = useNavigate();  // Use useNavigate instead of useHistory
+  const navigate = useNavigate();  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ function AddExerciseForm() {
     })
       .then(response => response.json())
       .then(() => {
-        navigate('/exercises');  // Use navigate to redirect
+        navigate('/exercises');  
       });
   };
 

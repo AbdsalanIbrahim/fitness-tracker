@@ -1,13 +1,11 @@
-// ExerciseCard.js
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './ExerciseCard.css';
 
 function ExerciseCard() {
-  const { id } = useParams(); // Get the exercise ID from the URL
-  const [exercise, setExercise] = useState(null); // State to hold the exercise data
+  const { id } = useParams(); 
+  const [exercise, setExercise] = useState(null); 
 
-  // Fetch exercise data when the component mounts or when ID changes
   useEffect(() => {
     fetch(`http://localhost:4000/exercises/${id}`)
       .then(response => response.json())
@@ -15,7 +13,6 @@ function ExerciseCard() {
       .catch((error) => console.error('Error fetching exercise:', error));
   }, [id]);
 
-  // Display loading state while fetching data
   if (!exercise) return <p>Loading...</p>;
 
   return (

@@ -102,14 +102,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Navigation Bar */}
         <NavBar />
         
-        {/* Main Content */}
         <div className="app-container">
           <h1>Fitness Tracker</h1>
           
-          {/* Routes */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/exercises" element={<ExerciseList />} />
