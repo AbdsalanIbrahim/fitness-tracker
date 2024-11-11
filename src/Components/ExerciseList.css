@@ -1,0 +1,59 @@
+.exercise-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .exercise-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .exercise-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area properly */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .exercise-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .exercise-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .exercise-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .exercise-button:hover {
+    background-color: #45a049;
+  }
+  
