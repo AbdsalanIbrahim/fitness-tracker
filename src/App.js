@@ -1,4 +1,3 @@
-// App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import ExerciseList from './Components/ExerciseList';
@@ -77,6 +76,27 @@ const exerciseData = [
     "duration": 20,
     "caloriesBurned": 100,
     "imageUrl": "https://th.bing.com/th/id/OIP.ETwrHgdk0Fpz5s5s1hLPKwHaE8?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 11,
+    "exerciseName": "Rowing",
+    "duration": 40,
+    "caloriesBurned": 350,
+    "imageUrl": "https://www.concept2.com/_next/image?url=https%3A%2F%2Fcms.concept2.com%2F%2Fsites%2Fdefault%2Ffiles%2F2024-07%2FGBMensEight.jpg&w=3840&q=75"
+  },
+  {
+    "id": 12,
+    "exerciseName": "Dancing",
+    "duration": 60,
+    "caloriesBurned": 400,
+    "imageUrl": "https://www.communitydance.org.uk/content/46403/Live/image_phone/NetworksWEB.jpg"
+  },
+  {
+    "id": 13,
+    "exerciseName": "CrossFit",
+    "duration": 50,
+    "caloriesBurned": 500,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDv6ccTIxeaE598xA3HMYTRLThVadYXRFEXg&s"
   }
 ];
 

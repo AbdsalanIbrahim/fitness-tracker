@@ -49,4 +49,3 @@ function ExerciseList() {
 }
 
 export default ExerciseList;
-
